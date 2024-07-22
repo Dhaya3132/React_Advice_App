@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import '../Styles/Advice.css'
 
 const Advice = () => {
 
-    const [Advice,setAdvice] = useState('Love the Pain');
+    const [Advice,setAdvice] = useState();
 
     const handleClick = async () => {
         try{
@@ -15,6 +15,10 @@ const Advice = () => {
             setAdvice('Error at getting feed... Give an another shot');
         }
     }
+
+    useEffect(()=>{
+        handleClick();
+    },[])
 
     return (
         <>
