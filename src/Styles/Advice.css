@@ -1,0 +1,17 @@
+h1{
+    font-size: 55px;
+    margin: 0;
+}
+p{
+    margin: 0;
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.499);
+}
+button{
+    padding: 20px 30px 20px 30px;
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    background-color: #FF4F00;
+}
